@@ -108,7 +108,7 @@ class SVM {
     }
 
     predict(input) {
-        return this.dualClassification(input) > 0 ? 1 : 0;
+        return this.dualClassification(input) > 0 ? 1 : -1;
     }
     get data() {
         return this._data;
