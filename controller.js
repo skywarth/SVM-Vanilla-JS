@@ -17,8 +17,14 @@ for(i=0;i<testData.length;i++){
 
     predictionLabels[i]=MySVM.predict(testData[i]);
 }
+/*console.log("Test values:")
+console.log(testData);*/
+
+console.log("Test labels (classes):")
 console.log(testLabels);
+
+console.log("Prediction labels (classes):")
 console.log(predictionLabels);
 
-console.log(compareAccuracy(predictionLabels,testLabels));
+console.log("Accuracy Rate="+compareAccuracy(predictionLabels,testLabels))
 console.log("finish");
