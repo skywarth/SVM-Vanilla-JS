@@ -1,4 +1,4 @@
-
+/*
 //const newSVM=new SVM();
 const data = [
     [63.94467417052296,81.0217272621887],
@@ -30,5 +30,5 @@ let a=MySVM.predict([50,50 ]);
 console.log(a);
 a=MySVM.predict([6.6500878665167775,39.49294636329541]);
 console.log(a);
-
+*/
 // expected output : 1*/
