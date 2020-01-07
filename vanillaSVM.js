@@ -18,4 +18,13 @@ class SVM {
         }
     }
 
+
+    get data() {
+        return this._data;
+    }
+
+    get labels() {
+        return this._labels;
+    }
+
 }
