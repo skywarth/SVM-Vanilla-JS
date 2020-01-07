@@ -1,6 +1,6 @@
 class   Kernels{
 
-
+//test
 
 gaussianKernel(Xi, Xj, sigma) {
     let s = 0;
