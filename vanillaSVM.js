@@ -86,7 +86,14 @@ class SVM {
             } //end of for-loop related to i
         } //end while
     } //end of function
-
+// returns the distance between decision hyperplane and given input
+    dualClassification(input) {
+        let f = this._b;
+        for (let i = 0; i < this._N; i++) {
+            f += this._alpha[i] * this._labels[i] * this.kernel(input, this._data[i]);
+        }
+        return f;
+    }
 
 
     //prepare kernel
