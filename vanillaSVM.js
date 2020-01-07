@@ -19,10 +19,10 @@ class SVM {
             this._alpha.push(0);
         }
 
-        this.sequentialMinimalOptimization();
+        this.SVMSMO();
     }
 
-    sequentialMinimalOptimization() {
+    SVMSMO() {
         let passes = 0;
         while (passes < this._maxPasses) {
             let didAlphaChanged = 0;
@@ -107,7 +107,9 @@ class SVM {
         }
     }
 
-
+    predict(input) {
+        return this.dualClassification(input) > 0 ? 1 : 0;
+    }
     get data() {
         return this._data;
     }
