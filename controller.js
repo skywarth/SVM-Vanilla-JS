@@ -20,5 +20,5 @@ for(i=0;i<testData.length;i++){
 console.log(testLabels);
 console.log(predictionLabels);
 
-
+console.log(compareAccuracy(predictionLabels,testLabels));
 console.log("finish");
