@@ -2,6 +2,23 @@
 
 class SVM {
     constructor(data, labels, C, kernel, RBFSigma = 15) {
+        let sigma = Number(RBFSigma);
+        isNaN(sigma) ? (this._RBFSigma = 15) : (this._RBFSigma = RBFSigma);
+
+        this._data = data;
+        this._labels = labels;
+        this._kernel = kernel;
+        this._C = C;
+        this._N = this._data.length;
+        this._alpha = [];
+        this._b = 0;
+        this._maxPasses = 20;
+        this._tol = 0.0001;
+
+        for (let i = 0; i < this._N; i++) {
+            this._alpha.push(0);
+        }
+
 
     }
 
